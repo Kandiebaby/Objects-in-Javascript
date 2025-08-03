@@ -25,3 +25,7 @@ console.log(jsonString);
 let jsonObj = JSON.parse(jsonString);
 console.log(jsonObj.name, jsonObj.age, jsonObj.enrolled); 
 jsonObj.courses.forEach(course => console.log(course));
+
+let {name, courses } = student;
+console.log(name);
+console.log(courses);
