@@ -29,3 +29,7 @@ jsonObj.courses.forEach(course => console.log(course));
 let {name, courses } = student;
 console.log(name);
 console.log(courses);
+let scores = [85, 92, 78, 90];
+let [score1, score2] = scores;
+console.log(score1);
+console.log(score2);
