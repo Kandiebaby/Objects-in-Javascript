@@ -18,3 +18,7 @@ console.log(student.name);
 console.log(student.age);
 console.log(student.displayInfo());
 student.greet();
+
+
+let jsonString = '{"name":"Kadi","age":33,"enrolled":true,"courses":["Math","English","Chemistry","Biology"]}';
+console.log(jsonString);

@@ -1,0 +1,6 @@
+{
+    "name": "Kadi" ,
+    "age": 33,
+    "enrolled": true,
+    "courses": ["Math", "English", "Chemistry", "Biology"]
+}
