@@ -43,3 +43,11 @@ console.log(clonedObj);
 let studentWithGraduation = { ...clonedObj, graduationYear: 2025 };
 console.log("Student with Graduation Year:");
 console.log(studentWithGraduation);
+
+ courses = { courses: ["math", "english", "chemistry", "biology"]};
+let newcourses = { newcourses: ["information technology", "physics"]};
+let combinedCourses = [...courses.courses, ...newcourses.newcourses];
+
+console.log(courses);
+console.log(newcourses);
+console.log(combinedCourses);
