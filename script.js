@@ -33,3 +33,13 @@ let scores = [85, 92, 78, 90];
 let [score1, score2] = scores;
 console.log(score1);
 console.log(score2);
+
+
+
+let originalObj = { student };
+let clonedObj = { ...student };
+console.log("Cloned Object:");
+console.log(clonedObj);
+let studentWithGraduation = { ...clonedObj, graduationYear: 2025 };
+console.log("Student with Graduation Year:");
+console.log(studentWithGraduation);
