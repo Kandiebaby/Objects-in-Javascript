@@ -2,7 +2,8 @@ let student = {
     name: "Kadi",
     age: 33,
     enrolled: true,
-    courses: "math, english,chemistry,biology",
+    courses: ["math", "english","chemistry","biology"],
+   
     displayInfo: function() {
         return "Name: " + this.name + ", Age: " + this.age + ", Enrolled: " + (this.enrolled ? "True" : "False") + ", Courses: " + this.courses;        
     },
@@ -10,9 +11,16 @@ let student = {
     greet: function() {
         console.log("Hello, my name is " + this.name + ". I am " + this.age + "years old and I am enrolled in the following courses: " + this.courses);
         return true;
-    }
+    },
 
+haveCourses:  function(course) {
+    this.courses.push(course);
+    console.log(`${course} has been added to your courses.`);
+}
 };
+
+student.haveCourses("Music");
+console.log(student.displayInfo());
 
 console.log(student.name);
 console.log(student.age);
@@ -51,3 +59,4 @@ let combinedCourses = [...courses.courses, ...newcourses.newcourses];
 console.log(courses);
 console.log(newcourses);
 console.log(combinedCourses);
+
