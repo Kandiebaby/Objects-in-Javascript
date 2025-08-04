@@ -24,8 +24,6 @@ student.haveCourses("Music");
 let totalCourses = Object.values(student)[3].length;
 
 
-
-
 student.haveCourses("Music");
 console.log(student.displayInfo());
 console.log("Total Courses:" + totalCourses);
@@ -52,6 +50,14 @@ let scores = [85, 92, 78, 90];
 let [score1, score2] = scores;
 console.log(score1);
 console.log(score2);
+
+let sumCourses = scores.reduce((
+    accumulator, currentValue) => accumulator + currentValue,
+    0,
+);
+let averageScore = sumCourses / scores.length
+console.log(sumCourses);
+console.log("Average Score:" + averageScore)
 
 
 
