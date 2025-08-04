@@ -9,7 +9,7 @@ let student = {
     },
 
     greet: function() {
-        console.log("Hello, my name is " + this.name + ". I am " + this.age + "years old and I am enrolled in the following courses: " + this.courses);
+        console.log("Hello, my name is " + this.name + ". I am " + this.age + " years old and I am enrolled in the following courses: " + this.courses);
         return true;
     },
 
@@ -17,15 +17,26 @@ haveCourses:  function(course) {
     this.courses.push(course);
     console.log(`${course} has been added to your courses.`);
 }
+
 };
 
 student.haveCourses("Music");
+let totalCourses = Object.values(student)[3].length;
+
+
+
+
+student.haveCourses("Music");
 console.log(student.displayInfo());
+console.log("Total Courses:" + totalCourses);
+
 
 console.log(student.name);
 console.log(student.age);
 console.log(student.displayInfo());
 student.greet();
+
+
 
 
 let jsonString = '{"name":"Kadi","age":33,"enrolled":true,"courses":["Math","English","Chemistry","Biology"]}';
